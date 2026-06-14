@@ -71,7 +71,12 @@ body{
 }
 
 .planet-btn.active{
-  background:rgba(79,140,255,.2);
+ background:linear-gradient(
+45deg,
+#3b82f6,
+#8b5cf6,
+#06b6d4
+);
   border:1px solid rgba(79,140,255,.5);
 }
 
