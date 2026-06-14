@@ -185,3 +185,39 @@ body{
   }
 
 }
+.orbit{
+  position:absolute;
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:50%;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+
+.orbit1{
+  width:500px;
+  height:500px;
+  animation:spin 20s linear infinite;
+}
+
+.orbit2{
+  width:620px;
+  height:620px;
+  animation:spinReverse 28s linear infinite;
+}
+
+.orbit3{
+  width:760px;
+  height:760px;
+  animation:spin 40s linear infinite;
+}
+
+@keyframes spin{
+  from{transform:translate(-50%,-50%) rotate(0deg);}
+  to{transform:translate(-50%,-50%) rotate(360deg);}
+}
+
+@keyframes spinReverse{
+  from{transform:translate(-50%,-50%) rotate(360deg);}
+  to{transform:translate(-50%,-50%) rotate(0deg);}
+}
