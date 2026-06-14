@@ -11,7 +11,7 @@ buttons.forEach(button => {
 
     buttons.forEach(btn => btn.classList.remove("active"));
     button.classList.add("active");
-
+planetImage.style.transform = "scale(1.15)";
     planetImage.style.opacity = "0";
     planetImage.style.transform = "scale(0.8)";
 
@@ -23,7 +23,7 @@ buttons.forEach(button => {
       planetDistance.textContent = button.dataset.distance;
 
       planetImage.style.opacity = "1";
-      planetImage.style.transform = "scale(1)";
+      planetImage.style.transform = "scale(1.05)";
 
     }, 250);
 
